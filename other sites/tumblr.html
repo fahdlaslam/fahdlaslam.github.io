@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<head>
+    <style href>a {text-decoration: none} </style>
+        
+        <!--Default Variables-->
+        <meta name="image:Background" content="" />
+        <meta name="image:Sidebar" content="" />
+        <meta name="image:Header" content="" />
+        
+        <meta name="if:Sidebar Image" content="0">
+        <meta name="if:Tagline" content="0">
+        <meta name="if:Top Links" content="0">
+        <meta name="if:Default Blog Header" content="1">
+        <meta name="if:Custom Header" content="0">
+        <meta name="if:Archive" content="1">
+        <meta name="if:RSS" content="1">
+        <meta name="if:Submit" content="0">
+        
+        <meta name="color:Background" content="#FFCCCC" />
+        <meta name="color:Body Text" content="#555555" />
+        <meta name="color:Link" content="#FF0066" />
+        <meta name="color:Link Hover" content="#99CC00" />
+        <meta name="color:Upper Links" content="#ffEEEE" />
+        
+        <meta name="text:Tagline" content=""/>
+        <meta name="text:Custom Title Font CODE" content=""/>
+        <meta name="text:Custom Title Font NAME" content=""/>
+        
+        <meta name="text:Top Link 1 TITLE" content=""/>
+        <meta name="text:Top Link 1 URL" content=""/>
+        
+        <meta name="text:Top Link 2 TITLE" content=""/>
+        <meta name="text:Top Link 2 URL" content=""/>
+        
+        <meta name="text:Top Link 3 TITLE" content=""/>
+        <meta name="text:Top Link 3 URL" content=""/>
+        
+        <meta name="text:Top Link 4 TITLE" content=""/>
+        <meta name="text:Top Link 4 URL" content=""/>
+        
+        <meta name="text:Top Link 5 TITLE" content=""/>
+        <meta name="text:Top Link 5 URL" content=""/>
+        
+        <meta name="text:Top Link 6 TITLE" content=""/>
+        <meta name="text:Top Link 6 URL" content=""/>
+        
+        <meta name="text:Top Link 7 TITLE" content=""/>
+        <meta name="text:Top Link 7 URL" content=""/>
+        
+        <meta name="font:Body" content=""/>
+
+        <title>{Title}{block:PostTitle} | {PostTitle}{/block:PostTitle}</title>
+        <link rel="shortcut icon" href="{Favicon}"/>
+
+        {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
+        
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,400italic,700' rel='stylesheet' type='text/css'>
+
+        {text:Custom Title Font CODE}
+
+    <style type="text/css">
+
+        #entry a > img:not([src*="avatar"]),
+        #entry p > img,
+        #entry center > img {
+          width: 500px !important;
+          min-width: 500px !important;
+          max-width: 500px !important;
+        }
+
+        /*General Formatting*/
+        body { 
+            background: {color:Background};
+            background-image:url('{image:Background}');
+            background-attachment: fixed;
+            background-position:center;
+            font-family: '{font:Body}', Trebuchet MS, sans serif;
+            font-size:14px;
+            line-height: 1.5em;
+            font-smooth: always;
+            font-weight: 400;
+            color: {color:Body Text};
+        }
+
+        /*Link Formatting*/
+        a {
+            color: {color:Link};
+            font-smooth:always;
+        }
+
+        a:hover {
+            color: {color:Link Hover};
+            font-smooth:always;
+        }
+
+        /*Image Formatting*/
+        img {
+            max-width: 1040px;
+            overflow:hidden;
+        }
+
+        /*Paragraph Formatting*/    
+        p {
+            line-height: 1.5em;
+        }
+
+        /*Blockquote Formatting*/
+        blockquote {
+            border-left: 2px {color:Link} solid;
+            margin-left: 15px;
+            padding-left: 10px;
+        }
+    
+        
+        /*Controls Post Titles*/
+        h1 { 
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            margin-top: 0px;
+            text-align: left;
+            font-smooth: always;
+            font-weight: 200;
+            font-size: 30px;
+            letter-spacing: -1px;
+            line-height: 1em;
+        }
+            
+        /*Header (Level 2)*/
+        h2 {
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            text-align: left;
+            font-smooth: always;
+            font-weight: 200;
+            font-size: 35px;
+            letter-spacing: -1px;
+            line-height: 1em;
+        }
+
+        /*Header (Level 3)*/
+        h3 {
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            text-align: left;
+            font-smooth: always;
+            font-weight: 200;
+            font-size: 25px;
+            letter-spacing: -1px;
+            line-height: 1em;
+        }
+
+        /*Header (Level 4)*/
+        h4 {
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            text-align: left;
+            font-smooth: always;
+            font-weight: 200;
+            font-size: 15px;
+            letter-spacing: -1px;
+            line-height: 1em;
+        }
+
+        /*Question Bubble Formating*/
+        .question {
+            background: {color:Link};
+            opacity: .5;
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            font-size: 26px;
+            color: white;
+            padding: 15px;
+            font-weight: 400;
+            line-height: 1em;
+            border-radius: 10px;
+        }
+
+
+        /*Arrow below question bubble*/
+        .arrow-down {
+            width: 0; 
+            height: 0; 
+            opacity: .5;
+            margin-left: 450px;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;   
+            border-top: 15px solid {color:Link};
+        }
+    
+        /*Asker format*/
+        .asker {
+            text-align:right;
+            font-style: italic;
+            font-weight: 400;
+        }
+        
+        /*header links*/
+        .upperlinks {
+            background-color: {color:Upper Links};
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
+            letter-spacing: 2px;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            width: auto;
+            padding: 4px 14px;
+            margin: 10px 6px 10px 6px;
+            display: inline-block;
+        }
+
+        /*sidebar links*/
+        .links{
+            text-align: center;
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 1.5em;
+            background:white;
+        }
+
+        /*permalinks at the bottom of each post*/
+        .permalink {
+            font-size: 11px;
+            border-top: dotted #ccc 1px;
+            padding-top:5px;
+            margin-top: 10px;
+            text-align: left;
+            text-transform: uppercase;
+        }    
+
+        /*Container that surrounds all other elements*/
+        #wrap {
+            background: white;
+            margin-top: 0px;
+            width:940px;
+            margin-left: auto;
+            margin-right: auto;
+        }  
+        
+        /*Default Header Formatting*/
+        #header {
+            text-align: center;
+            padding-top: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 20px;
+            font-size: 60px;
+            font-smooth: always;
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            font-weight: 0;
+            background: white;
+        }
+    
+        /*Custom Header Formatting*/
+        #customheader {
+          background-image: url('{image:Header}') !important;
+          background-size: 940px auto !important;
+          background-repeat: no-repeat !important;
+          height: auto !important;
+          width: 940px !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          padding-bottom: 0px !important;
+        }
+    
+        /*Tagline Formatting -- can only be used if NOT using a custom header*/
+        #tagline {
+            text-align: center;
+            font-size: 20px;
+            font-style:italic;
+            font-smooth: always;
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            font-weight: 200;
+            padding: 8px;
+        }
+        
+        #dottedline {
+            background: white;
+            margin: 10px 20px 30px 20px;
+            border-bottom: 1px dotted #ccc;
+        }
+    
+        /*Blog Post Formatting*/    
+        #entry {
+            width: 500px;
+            background:white;
+            overflow: hidden;
+            display: inline;
+            position: relative;
+            float: left;
+            padding-left:60px;
+            padding-right: 60px;
+            padding-bottom: 50px;
+        }
+            
+       /*Sidebar Formatting*/
+        #sidebar {
+            margin-top: 0px;
+            width: 260px;
+            background: white;
+            overflow: hidden;
+            float: right;
+            display:inline;
+            position: relative;
+            padding-right: 60px;
+            padding-left: 0px;
+            padding-bottom: 50px;
+        }
+
+        /*Blog Navigation Formatting -- at bottom of page*/  
+        #navig {
+            width: 500px;
+            font-family: '{text:Custom Title Font NAME}','Montserrat';
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+            float:left;
+            text-align: center;
+            margin-left:auto;
+            margin-right:auto;
+            position: relative;
+            display: inline;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 50px;
+        }
+        
+        /*Chat Post formatting*/
+        #conversation {
+            line-height: 3em;
+            padding-bottom: 10px;
+        }
+        
+        /*Notes on permalink pages*/            
+        #post-notes {
+            text-align: left;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        /*Description formatting*/    
+        #desc {
+            text-align: center;
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+    
+        /* CLEAR FIX*/
+            .clearfix:after {
+                content: ".";
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+            .clearfix {
+                display: inline-block;
+            }
+            /* Hides from IE-mac \*/
+            * html .clearfix { 
+                height: 1%;
+            }
+            .clearfix {
+                display: block;
+            }
+            /* End hide from IE-mac */
+        /*END CLEAR FIX*/
+
+        {CustomCSS}
+    </style>
+</head>
+
+
+
+<body>
+
+<div id="wrap">
+    
+    <div id="main" class="clearfix">
+
+        {block:ifDefaultBlogHeader}
+            <div id="customheader">
+                <a href="/">
+                <img src="{image:Header}">
+                </a>
+            </div>
+            
+            {block:ifTagline}
+                <div id="tagline">
+                    {text:Tagline}
+                </div>
+            {/block:ifTagline}
+            
+                {block:ifTopLinks}
+                <center>
+                    <div class="upperlinks">
+                        <a href="{text:Top Link 1 URL}">{text:Top Link 1 TITLE}</a>
+                    </div>
+                    
+                    <div class="upperlinks">
+                        <a href="{text:Top Link 2 URL}">{text:Top Link 2 TITLE}</a>
+                    </div>
+                    
+                    <div class="upperlinks">
+                        <a href="{text:Top Link 3 URL}">{text:Top Link 3 TITLE}</a>
+                    </div>
+                    
+                    <div class="upperlinks">
+                        <a href="{text:Top Link 4 URL}">{text:Top Link 4 TITLE}</a>
+                    </div>
+                    
+<!------------------------------------------------------------
+
+If you need more than 7 comments, message me for help. Or, try and figure out the pattern! It's not too hard.
+                    
+                    <div class="upperlinks">
+                        <a href="{text:Top Link 5 URL}">{text:Top Link 5 TITLE}</a>
+                    </div>
+                    
+                    <div class="upperlinks">
+                        <a href="{text:Top Link 6 URL}">{text:Top Link 6 TITLE}</a>
+                    </div>
+                    
+                    <div class="upperlinks">
+                        <a href="{text:Top Link 7 URL}">{text:Top Link 7 TITLE}</a>
+                    </div>
+                    
+------------------------------------------------------------>
+                    
+                </center>
+                {/block:ifTopLinks}
+            
+            <div id="dottedline"></div>
+        {/block:ifDefaultBlogHeader}
+
+
+        {block:ifCustomHeader}
+            <div id="customheader">
+                <a href="/">
+                <img src="{image:Header}">
+                </a>
+            </div>
+            
+            <div id="dottedline"></div>
+        {/block:ifCustomHeader}
+
+        
+        <div id="sidebar">
+
+            <!--Sidebar Image-->
+            <center>
+            {block:ifSidebarImage}
+                <img src="{image:Sidebar}" style="width:260px; padding-bottom: 20px;"><br>
+            {/block:ifSidebarImage}
+            </center>
+
+            <!--Description-->
+            <div id="desc">
+                {Description}
+            </div>
+
+            <!--Sidebar Links-->
+            <div class="links">
+                <a href="/ask">{AskLabel}</a><br>
+                
+                {block:HasPages}{block:Pages} 
+                    <a href="{URL}">{Label}</a><br>
+                {/block:Pages}{/block:HasPages}
+                
+                {block:IfArchive}<a href="/archive">Archive</a><br>{/block:IfArchive}
+                
+                {block:IfRSS}<a href="{RSS}">RSS</a><br>{/block:IfRSS}
+                
+                {block:IfSubmit}<a href="/submit">Submit</a>{/block:IfSubmit}
+            </div>
+
+            <br>
+
+            <!--Search Bar-->
+            <center>
+            <form action="/search" method="get">
+                <input type="text" name="q" value="{SearchQuery}"/>
+                <input type="image" src="http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/zoom.png" height="12px" alt="submit" name="submit" />
+            </form>
+            </center>
+
+            <br>
+            
+            <!--Theme Credit-->
+            <div id="desc">
+                <p></p>
+            </div>
+        </div>
+
+    {block:Posts}
+
+
+        <div id="entry">
+
+            <!--Text Posts-->
+            {block:Text}
+                {block:Title}<a href="{Permalink}"><h1>{Title}</h1></a>{/block:Title}
+                {Body}
+            {/block:Text}
+
+
+            <!--Photo Posts-->
+            {block:Photo}
+                <center>{LinkOpenTag}
+                    <a href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/></a>
+                {LinkCloseTag}</center>
+                {block:Caption}{Caption}{/block:Caption}
+            {/block:Photo}
+
+
+            <!--Photoset Posts-->
+            {block:Photoset}
+                <center>{LinkOpenTag}{Photoset-500}{LinkCloseTag}</center>
+                {block:Caption}{Caption}{/block:Caption}
+            {/block:Photoset}
+
+
+            <!--Quote Posts-->
+            {block:Quote}
+                <a href="{Permalink}"><h1>{Quote}</h1></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—&nbsp;{block:Source}{Source}{/block:Source}<br><br>
+            {/block:Quote}
+
+
+            <!--Link Posts-->
+            {block:Link}
+                <h1><a href="{URL}">{Name}</a></h1>
+                {block:Description}{Description}{/block:Description}
+            {/block:Link}
+
+
+            <!--Audio Posts-->
+            {block:Audio}
+                <center>
+                    {block:AudioEmbed}{AudioEmbed-500}{/block:AudioEmbed}
+                    
+                    {block:AlbumArt}
+                    <img src="{AlbumArtURL}">
+                    {/block:AlbumArt}
+                    
+                    <br><br>
+                    
+                    {block:AudioPlayer}{AudioPlayerGrey}{/block:AudioPlayer}
+                </center>
+            
+                {block:Caption}{Caption}{/block:Caption}
+            
+            {/block:Audio}
+            
+            
+            <!--Chat Posts-->
+            {block:Conversation}
+                <div class="conversation">
+                    {block:Title}<h1>{Title}</h1>{/block:Title}
+                    
+                    {block:Lines}
+                        <br>{block:Label}<b>{Label}</b>{/block:Label}
+                        {Line}
+                    {/block:Lines}
+                
+                </div>
+            {/block:Conversation}
+            
+            
+            <!--Video Posts-->
+            {block:Video} 
+                {Video-500}
+                {block:Caption}{Caption}{/block:Caption}
+            {/block:Video}
+            
+            
+            <!--Question/Answer/Ask Posts-->
+            {block:Answer}
+                <div class="question">{Question}</div>
+                <div class="arrow-down"></div>
+                <div class="asker">- {Asker}</div>
+                
+                {Answer}
+            {/block:Answer}
+
+
+            <!--date below each post + other links like notes-->
+            {block:Date}
+                <div class="permalink">
+            
+                    <!--Date Posted-->
+                    <img src="https://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/48x48/pencil.png" height="7px;"><a href="{Permalink}">&nbsp;&nbsp;{ShortMonth}. {DayOfMonth}{DayofMonthSuffix}</a>&nbsp;&nbsp;&nbsp;
+                    
+                    <!--Time Posted (12 hour)-->
+                    <img src="https://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/48x48/star.png" height="7px"><a href="{Permalink}">&nbsp;&nbsp;{12Hour}:{Minutes}{CapitalAmPm}</a>&nbsp;&nbsp;&nbsp;
+                    
+                    <!--Note Count-->
+                    <img src="https://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/48x48/heart_empty.png" height="7px;"><a href="{Permalink}">&nbsp;&nbsp;{NoteCountWithLabel}</a>
+                    <!--Tags-->
+                    {block:HasTags}<br><img src="https://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/48x48/tag.png" height="8px">&nbsp;&nbsp;{block:Tags}<a href="{TagURL}">{Tag}</a>&nbsp;&nbsp;{/block:Tags}{/block:HasTags}
+                
+                </div>
+            {/block:Date}
+
+            <!--Information on Permalink Pages-->
+            {block:PostNotes}
+                <div id="post-notes">
+                
+                    <!--Reblogged from/via-->
+                    {block:RebloggedFrom}
+                        <img src="http://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/users.png" height="8px"><a href="{ReblogParentURL}">&nbsp;&nbsp;{ReblogParentName}</a>
+                    {/block:RebloggedFrom}&nbsp;&nbsp;&nbsp;
+                    
+                    <!--Content Source-->
+                    {block:ContentSource}
+                        <img src="http://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/user.png" height="8px"><a href="{SourceURL}">&nbsp;&nbsp;{SourceTitle}</a>
+                    {/block:ContentSource}
+                    
+                </div>
+            
+                {PostNotes}{/block:PostNotes}</div>
+        {/block:Posts}
+
+            <!--Navigation at bottom of the blog-->
+            {block:Pagination}
+                <div id="navig">
+                            {block:Pagination}
+                            
+                                {block:PreviousPage}
+                                    <a href="{PreviousPage}">Previous Page</a>
+                                &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+                                {/block:PreviousPage}
+                
+                            {block:NextPage}
+                                <a href="{NextPage}">Next Page</a>
+                            {/block:NextPage}
+                            
+                        {/block:Pagination}
+                </div>
+            {/block:Pagination}
+        </div>
+    </div>
+<br><br><br>
+</body>
+</html>
