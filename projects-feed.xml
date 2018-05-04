@@ -3,7 +3,7 @@
   <channel>
     <title>Fahd Aslam - projects</title>
     <description>Unity C# game programmer, JavaScript web developer</description>
-    <link>https://flaslam.github.io/</link>
+    <link>http://localhost:4000</link>
     
       
         <item>
@@ -11,8 +11,8 @@
           <description>
 </description>
           <pubDate>2013-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/testy-test/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/testy-test/</guid>
+          <link>http://localhost:4000/projects/testy-test/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/testy-test/</guid>
         </item>
       
     
@@ -22,8 +22,8 @@
           <description>
 </description>
           <pubDate>2014-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/ozone-beauty/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/ozone-beauty/</guid>
+          <link>http://localhost:4000/projects/ozone-beauty/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/ozone-beauty/</guid>
         </item>
       
     
@@ -33,8 +33,8 @@
           <description>
 </description>
           <pubDate>2015-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/satorika/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/satorika/</guid>
+          <link>http://localhost:4000/projects/satorika/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/satorika/</guid>
         </item>
       
     
@@ -44,8 +44,8 @@
           <description>
 </description>
           <pubDate>2016-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/al-fahd/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/al-fahd/</guid>
+          <link>http://localhost:4000/projects/al-fahd/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/al-fahd/</guid>
         </item>
       
     
@@ -55,8 +55,8 @@
           <description>
 </description>
           <pubDate>2017-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/dream-acting/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/dream-acting/</guid>
+          <link>http://localhost:4000/projects/dream-acting/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/dream-acting/</guid>
         </item>
       
     
@@ -66,8 +66,8 @@
           <description>
 </description>
           <pubDate>2017-01-02T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/ifl/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/ifl/</guid>
+          <link>http://localhost:4000/projects/ifl/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/ifl/</guid>
         </item>
       
     
