@@ -8,7 +8,7 @@
       
         <item>
           <title>Testy Test</title>
-          <description>
+          <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
           <pubDate>2013-01-01T00:00:00+00:00</pubDate>
           <link>https://flaslam.github.io//projects/testy-test/</link>
@@ -30,7 +30,9 @@
       
         <item>
           <title>Satorika</title>
-          <description>
+          <description>&lt;p&gt;&lt;a href=&quot;http://satorikagaming.tumblr.com/&quot;&gt;&lt;img src=&quot;/assets/img/home/satorika.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Site and logo design for &lt;a href=&quot;http://satorikagaming.tumblr.com/&quot;&gt;SATORIKA GAMING&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2015-01-01T00:00:00+00:00</pubDate>
           <link>https://flaslam.github.io//projects/satorika/</link>
@@ -52,7 +54,9 @@
       
         <item>
           <title>Dream Acting</title>
-          <description>
+          <description>&lt;p&gt;&lt;a href=&quot;https://dreamacting.github.io/&quot;&gt;&lt;img src=&quot;/assets/img/home/dream-acting.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Landing page for &lt;a href=&quot;https://dreamacting.github.io/&quot;&gt;DREAM ACTING&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-01-01T00:00:00+00:00</pubDate>
           <link>https://flaslam.github.io//projects/dream-acting/</link>
