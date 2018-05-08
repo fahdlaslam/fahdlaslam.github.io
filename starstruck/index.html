@@ -90,18 +90,20 @@
         <script type="text/javascript">
         $(function() {
             $('body').vegas({
-                delay: 25000,
+                delay: 8000,
                 transitionDuration: 20000,
+                animationDuration: 100000,
                 timer: false,
-                shuffle: true,
+                shuffle: false,
                 slides: [
-                    { src: 'img/01.jpg'},
-                    { src: 'img/02.jpg'},
-                    { src: 'img/03.jpg'},
                     { src: 'img/04.jpg'},
+                    { src: 'img/03.jpg'},
                     { src: 'img/05.jpg'},
-                    { src: 'img/06.jpg'}
-                ]
+                    { src: 'img/01.jpg'},
+                    { src: 'img/06.jpg'},
+                    { src: 'img/02.jpg'}
+                ],
+                animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
             });
 
             $(".btn_sample_top").click(function () {
