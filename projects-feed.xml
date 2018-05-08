@@ -3,7 +3,7 @@
   <channel>
     <title>Fahd Aslam - projects</title>
     <description>Unity C# game programmer, JavaScript web developer</description>
-    <link>https://flaslam.github.io/</link>
+    <link>http://localhost:4000</link>
     
       
         <item>
@@ -11,8 +11,8 @@
           <description>&lt;p&gt;Site and logo design for &lt;a href=&quot;#&quot;&gt;BRASH PURSUITS&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2015-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/brash-pursuits/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/brash-pursuits/</guid>
+          <link>http://localhost:4000/projects/brash-pursuits/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/brash-pursuits/</guid>
         </item>
       
     
@@ -22,8 +22,8 @@
           <description>&lt;p&gt;Landing page and logo design for &lt;a href=&quot;http://www.alfahd.com.pk/&quot;&gt;AL FAHD&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2016-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/al-fahd/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/al-fahd/</guid>
+          <link>http://localhost:4000/projects/al-fahd/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/al-fahd/</guid>
         </item>
       
     
@@ -35,8 +35,8 @@
 &lt;p&gt;Site and logo design for &lt;a href=&quot;http://satorikagaming.tumblr.com/&quot;&gt;SATORIKA&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2016-01-02T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/satorika/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/satorika/</guid>
+          <link>http://localhost:4000/projects/satorika/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/satorika/</guid>
         </item>
       
     
@@ -48,8 +48,8 @@
 &lt;p&gt;Landing page and logo design for &lt;a href=&quot;/starstruck/&quot;&gt;STARSTRUCK&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-01-01T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/starstruck/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/starstruck/</guid>
+          <link>http://localhost:4000/projects/starstruck/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/starstruck/</guid>
         </item>
       
     
@@ -61,21 +61,21 @@
 &lt;p&gt;Landing page and logo design for &lt;a href=&quot;https://dreamacting.github.io/&quot;&gt;DREAM ACTING&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-01-02T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/dream-acting/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/dream-acting/</guid>
+          <link>http://localhost:4000/projects/dream-acting/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/dream-acting/</guid>
         </item>
       
     
       
         <item>
           <title>Indoor Football League</title>
-          <description>&lt;p&gt;&lt;a href=&quot;/ifl/&quot;&gt;&lt;img src=&quot;/assets/img/home/ifl.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;a href=&quot;http://indoorfootballleague.co.uk/&quot;&gt;&lt;img src=&quot;/assets/img/home/ifl.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Site and logo design for &lt;a href=&quot;/ifl/&quot;&gt;INDOOR FOOTBALL LEAGUE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Site and logo design for &lt;a href=&quot;http://indoorfootballleague.co.uk/&quot;&gt;INDOOR FOOTBALL LEAGUE&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-01-03T00:00:00+00:00</pubDate>
-          <link>https://flaslam.github.io//projects/ifl/</link>
-          <guid isPermaLink="true">https://flaslam.github.io//projects/ifl/</guid>
+          <link>http://localhost:4000/projects/ifl/</link>
+          <guid isPermaLink="true">http://localhost:4000/projects/ifl/</guid>
         </item>
       
     
