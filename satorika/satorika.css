@@ -105,20 +105,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
-/* ==|== primary styles =====================================================
-	Author: Style Hatch
-	Verge - 1.0.0
-	Premium Tumblr Theme
-	http://vergetheme.tumblr.com
-	Theme by: Style Hatch - http://stylehatch.co
-	Support: verge@stylehatch.co | @stylehatch | http://tumblr.com/theme/00000
-	   _____ __        __        __  __      __       __  
-	  / ___// /___  __/ /__     / / / /___ _/ /______/ /_ 
-	  \__ \/ __/ / / / / _ \   / /_/ / __ `/ __/ ___/ __ \
-	 ___/ / /_/ /_/ / /  __/  / __  / /_/ / /_/ /__/ / / /
-	/____/\__/\__, /_/\___/  /_/ /_/\__,_/\__/\___/_/ /_/ 
-	         /____/                                    
-   ========================================================================== */
+/* ==|== primary styles ===================================================== */
 
 body {
 	font-family: "Courier New", Courier, monospace;
