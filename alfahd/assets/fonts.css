@@ -3,37 +3,37 @@
 
 @font-face {
 	font-family: 'apercu';
-	src: url('assets/fonts/apercu-medium.WOFF') format('woff');
+	src: url('fonts/apercu-medium.woff') format('woff');
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'apercu';
-	src: url('assets/fonts/apercu-bold.WOFF') format('woff');
+	src: url('fonts/apercu-bold.WOFF') format('woff');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'apercu';
-	src: url('assets/fonts/apercu-black.WOFF') format('woff');
+	src: url('fonts/apercu-black.WOFF') format('woff');
 	font-weight: 900;
 }
 
 @font-face {
 	font-family: 'apercu';
-	src: url('assets/fonts/apercu-regular.WOFF') format('woff');
+	src: url('fonts/apercu-regular.WOFF') format('woff');
 	font-weight: 200;
 }
 
 @font-face {
 	font-family: 'apercu';
-	src: url('assets/fonts/apercu-italic.WOFF') format('woff');
+	src: url('fonts/apercu-italic.WOFF') format('woff');
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'apercu mono';
-	src: url('assets/fonts/ApercuMono-Medium.woff2') format('woff2'),
+	src: url('fonts/ApercuMono-Medium.woff2') format('woff2'),
 	url('assets/fonts/ApercuMono-Medium.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
@@ -41,8 +41,8 @@
 
 @font-face {
 	font-family: 'apercu mono';
-	src: url('assets/fonts/ApercuMono-Regular.woff2') format('woff2'),
-	url('assets/fonts/ApercuMono-Regular.woff') format('woff');
+	src: url('fonts/ApercuMono-Regular.woff2') format('woff2'),
+	url('fonts/ApercuMono-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }

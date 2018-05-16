@@ -865,3 +865,7 @@ a.footnoted {
 table-fees td:nth-child(1) {
 	width:50%;
 }
+
+#logo svg:hover polygon {
+    fill: #fce57e;
+}
