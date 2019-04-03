@@ -1,0 +1,209 @@
+/*@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue.woff") format('woff');
+}*/
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/bebasneue-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+	padding: 2rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.navbar {
+    background-color: #ffcc33;
+}
+
+#about {
+	background-image: url(../img/bg01.jpg);
+	padding: 12rem 0 12rem 0;
+	text-align: center;
+}
+
+#offer {
+  background-color: white;
+}
+
+#why {
+  background-color: #ffcc33;
+}
+
+#services {
+  padding: 3rem 2rem 3rem 2rem;
+  background-color: #343839;
+  color: white;
+}
+
+#treatments {
+  background-image: url(../img/bg02.jpg);
+  color: white;
+}
+
+#alternative {
+  background-color: black;
+  color: white;
+}
+
+#consultation {
+  background-image: url(../img/services01-d.jpg);
+  padding: 6rem 2rem 6rem 2rem;
+}
+
+#connection {
+  background-image: url(../img/services02-d.jpg);
+  color: #ffffff;
+  padding: 6rem 2rem 6rem 2rem;
+}
+
+#treatment {
+  background-image: url(../img/services03-d.jpg);
+  padding: 6rem 2rem 6rem 2rem;
+}
+
+#book {
+  background-image: url(../img/services04-d.jpg);
+  color: #ffffff;
+  padding: 6rem 2rem 6rem 2rem;
+}
+
+#visa {
+	background-image: url(../img/services05-d.jpg);
+  padding: 6rem 2rem 6rem 2rem;
+}
+
+#accommodation {
+  background-image: url(../img/services06-d.jpg);
+  color: #ffffff;
+  padding: 6rem 2rem 6rem 2rem;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.text-navbar {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #5e5e5e;
+}
+
+a:hover {
+  color: #969696;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: Bebas;
+}
+
+a img:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #fff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ffcc33;
+  border-color: #ffcc33;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  #consultation {
+    padding: 12rem 2rem 12rem 2rem;
+  }
+
+  #connection {
+    padding: 12rem 0 12rem 0;
+  }
+
+  #treatment {
+    padding: 12rem 0 12rem 0;
+  }
+
+  #book {
+    padding: 12rem 0 12rem 0;
+  }
+
+  #visa {
+    padding: 12rem 0 12rem 0;
+  }
+
+  #accommodation {
+    padding: 12rem 0 12rem 0;
+  }
+}
+
+.transparent-navbar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+    opacity: 0.5;
+}
+
+.img-fluid {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img, h1, h2, h3, p {
+  text-align: center;
+}
