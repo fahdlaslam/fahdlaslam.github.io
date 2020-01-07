@@ -1,0 +1,84 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-weight: 800;
+}
+
+:root {
+	--mylo-green: #62e8b6;
+	--mylo-green-light: #d7f7ea;
+	--mylo-grey: #333333;
+	--mylo-grey-light: #bdbdbd;
+}
+
+audio {
+  width: 300px;
+  margin: 0.25rem 0 0.25rem 0;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 90px;
+}
+
+.container {
+	max-width: 992px;
+}
+
+.navbar-custom {
+	background-color: var(--mylo-grey);
+	text-transform: uppercase;
+ 	font-weight: 800;
+ 	font-size: 0.8rem;
+}
+
+a {
+	color: var(--mylo-green);
+}
+
+a:hover {
+	color: var(--mylo-green-light);
+}
+
+.footer {
+	margin: 1rem 0 1rem 0;
+}
+
+.smaller {
+	max-width: 80%;
+	margin: auto;
+}
+
+.img-banner {
+	max-width: 3rem;
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.img-logo {
+	max-height: 16rem;
+	margin: 1rem 0 1rem 0;
+}
+
+section {
+	padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+#bio {
+	background-color: var(--mylo-green-light);
+	background-image: url(../img/bg-pattern.png);
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
