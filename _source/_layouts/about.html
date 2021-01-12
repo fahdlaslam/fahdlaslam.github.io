@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<!--<div class="main-container about">
+  <div class="image">
+    <img alt="Fahd Aslam" src="/assets/img/me/{{ page.image }}">
+  </div>
+  <div class="bio">
+    {{ content }}
+
+  </div>
+</div>-->
+
+
+<div span="main-container about">
+  {% if post.image %}
+  <center><div class="image" style="width: 75%;">
+    <img alt="Fahd Aslam" src="/assets/img/me/{{ page.image }}">
+  </div>
+  {% endif %}
+  <div class="bio" style="text-align: center;">
+    {{ content }}
+
+  </div>
+  <hr class="small">
+</div>
+
+
+
+      {% include gallery.html %}

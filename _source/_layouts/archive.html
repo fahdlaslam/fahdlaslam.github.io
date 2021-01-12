@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="main-container project archive">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% assign posts = site[page.collection] | sort: 'date' %}
+  {% for entry in posts reversed %}
+    {% assign currentdate = entry.date | date: "%Y" %}
+    {% if currentdate != date %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <a class="section-title" href="#{{entry.date | date: "%Y"}}" id="{{entry.date | date: "%Y"}}">{{ currentdate }}</a>
+      <ul>
+      {% assign date = currentdate %}
+    {% endif %}
+      <li>
+        <a class="title" href="{% if entry.exturl %}{{ entry.exturl }}{% else %}{{ site.github.url }}{{ entry.url }}{% endif %}">{{ entry.title }}{% if entry.exturl %} ↗︎{% endif %}</a>
+        <blockquote>{{ entry.excerpt | remove: '<p>' | remove: '</p>'  }}</blockquote>
+      </li>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>

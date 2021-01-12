@@ -1,0 +1,53 @@
+title: "Fahd Aslam"
+email: flaslam@gmail.com
+description: "Unity C# game programmer, JavaScript web developer"
+full_description: |
+  I'm Fahd Aslam, I make [video games](/games) and [websites](/web) using ES6 JavaScript, Unity C#, and Python.
+baseurl: ""
+url: "https://flaslam.github.io/"
+twitter_username: 
+github_username: 
+facebook_username: 
+permalink: /:collection/:title/
+author: "Fahd Aslam"
+
+links:
+  'Work': '/'
+  'About': '/about/'
+  'Contact': 'mailto:&#102;&#108;&#97;&#115;&#108;&#97;&#109;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
+
+elsewhere:
+  'Email': '&#102;&#108;&#97;&#115;&#108;&#97;&#109;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      author: "Fahd Aslam"
+      permalink: /:collection/:title/
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: project
+      hide_date: true
+      hide_tags: true
+      author: "Fahd Aslam"
+  - scope:
+      path: "assets/img/photos"
+    values:
+      photo: true
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed

@@ -1,0 +1,13 @@
+section.photos {
+  text-align: center;
+
+  .photo {
+    display: inline-block;
+    max-height: 500px;
+    max-width: calc(50% - 1.2rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
+

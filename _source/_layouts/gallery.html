@@ -1,0 +1,86 @@
+---
+layout: default
+---
+{% assign bgcolors = "bg-yellow bg-peach bg-green bg-purple" | split: ' ' %}
+{% if page.cat %}
+  {% assign posts = site.projects | where_exp: "item", "item.type contains page.cat" | reverse %}
+{% else %}
+  {% assign posts = site.projects | where_exp: "item", "item.archive == nil" | reverse %}
+{% endif %}
+<script>
+$(function() {
+  $(".image").mouseover(function () {
+    $(this).attr('style', $(this).data("hover"));
+  }).mouseout(function () {
+    $(this).attr('style', $(this).data("src"));
+  });
+
+  $.fn.preload = function() {
+      this.each(function(){
+          $('<img/>')[0].src = this;
+      });
+  }
+
+  // Usage:
+
+  $(['/assets/img/home/ifl-t.jpg','/assets/img/home/satorika-t.jpg','/assets/img/home/dream-acting-t.jpg', '/assets/img/home/starstruck-t.jpg', '/assets/img/home/brash-pursuits-t.jpg', '/assets/img/home/al-fahd-t.jpg']).preload();
+
+});
+</script>
+
+<div class="home">
+  {% if page.cat %}
+  <h1 class="category-title">{{ page.title }}</h1>
+  {% endif %}
+  <div class="projects columns">
+    {% for post in posts %}
+    <div class="project-item column-item" data-type="{{ post.type | join:' ' }}" data-tags="{{ post.tags | join:' ' }}">
+      <a class="main-links" href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">
+        <!--<div class="image {{ bgcolors | sample }}" {% if post.image %} style="background-image: url('/assets/img/home/{{ post.image }}')" {% endif %}>-->
+        <div class="image {{ bgcolors | sample }}" {% if post.image %} style="background-image: url('/assets/img/home/{{ post.image }}')" {% if post.thumb %} data-src="background-image: url('/assets/img/home/{{ post.image }}')" data-hover="background-image: url('/assets/img/home/{{ post.thumb }}')" {% endif %}{% endif %}>
+
+        
+          {% if post.image %}
+          <!--<p class="img__description">{% if post.title %}<span class="bold">{{ post.title }}</span>, {% endif %}<span class="italic">{{ post.date | date:"%Y"}}</span></p>-->
+          <img class="hidden" src="/assets/img/home/{{ post.image }}">
+          
+          {% endif %}
+        </div>
+        <!--<div class="title">{% if post.title %}<span class="bold">{{ post.title }}</span>, {% endif %}<span class="italic">{{ post.date | date:"%Y"}}</span></div>-->
+      </a>
+      <!--<p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>-->
+    </div>
+    {% endfor %}
+  </div>
+
+  <hr class="small">
+
+  <!--<div class="columns">
+    <div class="column-item">
+      <h1 class="page-title red">Other Projects</h1>
+      <ul>
+      {% for entry in site.projects reversed %}
+      {% if entry.archive %}
+        <li class="archive-entry">
+          <a class="title" href="{% if entry.exturl %}{{ entry.exturl }}{% else %}{{ site.github.url }}{{ entry.url }}{% endif %}">{{ entry.title }}</a> <span class="date">{{ entry.date | date:"%Y" }}</span>
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="column-item">
+      <h1 class="blue">About Me</h1>
+      <div>{{ site.full_description | markdownify }}</div>
+    </div>
+    <div class="column-item">
+      <h1 class="purple">Elsewhere</h1>
+      <ul>
+      {% for link in site.elsewhere %}
+        <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>-->
+
+</div>
+

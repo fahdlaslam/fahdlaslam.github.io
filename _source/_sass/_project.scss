@@ -1,0 +1,53 @@
+.project {
+  //max-width: 720px;
+  max-width: 600px;
+  margin: auto;
+
+  .main-image {
+    margin-bottom: 1rem;
+  }
+
+  .page-title {
+    margin-top: 0;
+    //border-bottom: 1px dotted $blue;
+    text-align: center;
+  }
+
+  background-color: $bg-color;
+  padding: 1rem;
+  border-radius: $border-radius;
+  text-align: center;
+
+  .content {
+    margin-top: 1rem;
+  }
+
+  .content > *:first-child {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: $border-radius;
+  }
+
+  a:hover {
+    opacity: 0.75;
+    transition:all 0.2s;
+  }
+
+  code {
+    background-color: #eee;
+    padding: 0.2em;
+    border-radius: 6px;
+  }
+}
+
+.img-box {
+  transition:all 0.2s;
+}
+
+.img-box:hover {
+  opacity:0.75;
+  transition:all 0.2s;
+}

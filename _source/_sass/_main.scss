@@ -1,0 +1,223 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection { background:#7085ff; color: $bg-color; text-shadow: none;}
+::selection { background:#7085ff; color: $bg-color; text-shadow: none;}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: 'Montserrat', sans-serif;
+  margin: 1.5rem 0;
+  //width: 40%;
+}
+
+p {
+  line-height: 1.4;
+  margin-top: 0.75rem;
+}
+
+img { max-width: 100%; }
+
+.center { text-align: center; }
+
+main {
+  //max-width: 1280px;
+  max-width: 960px;
+  width: 90%;
+  margin: auto;
+}
+
+code {
+  color: #2A3937;
+  background: #EFEEF7;
+  padding: 0.1em;
+  border-radius: 0.25em;
+}
+
+blockquote {
+  border-left: 2px solid $light-text;
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
+blockquote *:first-child {
+  margin-top: 0;
+}
+
+//.main-container { margin: 8px; }
+.main-container {
+  margin: 8px;
+  max-width: 500px;
+}
+
+a {
+  // border-bottom: 1px solid $blue;
+  // text-decoration: none;
+  // font-weight: bold;
+}
+
+a:link, a:visited {
+  color: $text-color;
+  color: red;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: colorcycle;
+          animation-name: colorcycle;
+  //text-decoration: underline;
+}
+
+h1, h2, h3 { letter-spacing: 0.02em; word-spacing: 0.01em; }
+h1 { font-size: 1.9rem; margin-bottom: 0.75em; }
+h2 { font-size: 1.4rem; margin-bottom: 0.6em; }
+h3 { margin-bottom: 0.5em; }
+ul, ol { list-style: none; padding-left: 0; }
+ul ul, ol ol, .project ul, .project ol { padding-left: 1.5rem; }
+li { margin: 6px 0; }
+p { width: 100%; letter-spacing: 0.015em; word-spacing: 0.001em; }
+
+hr {
+  margin: 2rem 0.5rem;
+  height: 3px;
+  border-radius: 1.5px;
+  border: none;
+  background-image: linear-gradient(to right, $blue, $pink);
+}
+
+hr.small {
+  margin: 2rem auto;
+  height: 1px;
+  border-radius: 1.5px;
+  max-width: 420px;
+  border: none;
+  background-image: none;
+  background-color: $blue;
+}
+
+header {
+  margin: 8px;
+  vertical-align: bottom;
+  margin-top: 3rem;
+  //margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  //text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+header a {
+  text-decoration: none;
+}
+
+header, header a:link, header a:visited {
+  //color: #fff;
+  color: #000;
+}
+
+header a:hover, header a:active, header a:focus {
+  border-bottom-color: #fff;
+  color: red;
+  -webkit-animation: none;
+          animation: none;
+}
+
+header .title, header nav {
+  display: inline-block;
+  margin: 0.5rem 0;
+  vertical-align: bottom;
+}
+
+.header-bg-container {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+.header-bg {
+  //background: -webkit-gradient(linear, left top, right top, from($blue), to($pink));
+  //background: linear-gradient(to right, $blue, $pink);
+  //width: calc(100% + 128px);
+  //height: 225px;
+  //position: absolute;
+  //top: -100px;
+  //left: -64px;
+  //-webkit-transform: rotate(-0deg);
+  //        transform: rotate(-0deg);
+  //z-index: -100;
+}
+
+header nav {
+  padding-left: 16px;
+}
+
+header nav a {
+  margin: 0 4px;
+  display: inline;
+
+  &:first-of-type {
+    // margin-left: 0;
+  }
+}
+
+footer {
+  //border-top: 1px dotted $blue;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer div {
+  //display: inline-block;
+  display: block;
+  text-align: center;
+  vertical-align: top;
+}
+
+footer div:first-child {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 549px) {
+  footer div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  footer div:last-child {
+    //float: right;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+.category-title {
+  color: #fff;
+  text-shadow: 0 0.0625rem 0.125rem rgba(0,0,0,0.2);
+  margin-left: 0.5rem;
+}
+
+.red { color: #f55; }
+.blue { color: #55f; }
+.purple { color: #6528DD; }

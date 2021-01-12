@@ -1,0 +1,15 @@
+<header id='desc' div style="text-align:center">
+  <h3 class="center title"><a href="/">{{ site.title }}</a></h3>
+
+  {% if site.links %}
+  <nav>
+    {% for link in site.links %}
+    <a href="{{ link[1] }}">{{ link[0] }}</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+</header>
+
+<div class="header-bg-container">
+  <div class="header-bg"></div>
+</div>
